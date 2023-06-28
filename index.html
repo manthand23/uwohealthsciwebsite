@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, inital-scale=1.0">
+    <title>UWO Health Sciences Website</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel = "stylesheet" href = https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+    <link rel="preconnect" href = "https://fonts.googleapis.com/css2?family=Poppins:wgth@100;200;300;400;600;700&display-swap" rel = "stylesheet">
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <div class = "nav-links" id="navLinks">
+                <i class = "fa fa-close" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "courses.html">Courses</a></li>
+                    <li><a href = "chat.html">Chat</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                    <li class="navbar__btn">
+                        <a href= "/login.html" class="button">Sign In/Up</a>
+                    </li>
+                </ul>
+            </div>
+            <i class = "fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+
+<div class =  "text-box">
+    <h1> UWO Health Sciences Vault</h1>
+    <p>This is a website made to serve as a vault for all things Health Sciences here at University of Western Ontario</p>
+    <a href="#about" class="hero-btn">Click here to learn more</a>
+</div>   
+    </section>
+
+    <section class = "about">
+        <h1 id = "about">About this website</h1>
+        <p> This is a vault to help all University of Western Ontario Health Sciences students. <br> 
+            This website is coded by Manthan Desai and all course material is provided by Jasminder Bhatti. </p>
+    </section>
+
+
+
+    <section class ="course">
+        <h1> Courses included on this site</h1>
+        <p>Below listed are the courses that have notes and other course material provided</p>
+
+        <div class = "row">
+            <div class = "course-col">
+                <h3> First Year </h3>
+                <h4> Courses include: </h4>
+                <p>Health Sci 1001...</p>
+            </div>
+            <div class = "course-col">
+                <h3> Second Year </h3>
+                <h4> Courses include: </h4>
+                <p>Health Sci 2250...</p>
+            </div>
+            <div class = "course-col">
+                <h3> Third Year </h3>
+                <h4> Courses include: </h4>
+                <p>Coming Soon</p>
+            </div>
+            <div class = "course-col">
+                <h3> Fourth Year </h3>
+                <h4> Courses include: </h4>
+                <p>Coming Soon</p>
+            </div>
+        </div>
+    </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, inital-scale=1.0">
+    <title>UWO Health Sciences Website</title>
+    <link rel = "stylesheet" href="styles.css">
+    <link rel = "stylesheet" href = https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+    <link rel="preconnect" href = "https://fonts.googleapis.com/css2?family=Poppins:wgth@100;200;300;400;600;700&display-swap" rel = "stylesheet">
+</head>
+<body>
+    <section class = "chat-header">
+        <nav>
+            <div class = "nav-links" id="navLinks">
+                <i class = "fa fa-close" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "courses.html">Courses</a></li>
+                    <li><a href = "chat.html">Chat</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                    <li class="navbar__btn">
+                        <a href= "/login.html" class="button">Sign In/Up</a>
+                    </li>
+                </ul>
+            </div>
+            <i class = "fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+        <div class = "comment-box">
+            <h3> Leave your questions or comments!</h3>
+            <form class = "comment-form">
+                <input type = "text" placeholder="Enter Name:">
+                <input type = "email" placeholder="Enter Email:">
+                <textarea rows = "5" placeholder="Your Comment:"></textarea>
+                <button type = "submit" class = "hero-btn">POST COMMENT</button>
+            </form>
+        </div>
+    </section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
